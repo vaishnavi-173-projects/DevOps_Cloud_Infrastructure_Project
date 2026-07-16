@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Result Notifier</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 600px; margin: 60px auto; padding: 20px; }
+        h1 { color: #2c3e50; }
+        .card { border: 1px solid #ddd; border-radius: 8px; padding: 24px; }
+        input[type=file] { margin: 16px 0; }
+        button { background: #2c3e50; color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; }
+        .flash { background: #eafaf1; border: 1px solid #2ecc71; padding: 10px; border-radius: 4px; margin-bottom: 16px; }
+    </style>
+</head>
+<body>
+    <h1>Student Result Notifier</h1>
+    <div class="card">
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for message in messages %}
+                    <div class="flash">{{ message }}</div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+
+        <p>Upload a CSV with columns: <b>name, email, marks</b></p>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="csv_file" accept=".csv" required>
+            <br>
+            <button type="submit">Upload & Send Results</button>
+        </form>
+    </div>
+</body>
+</html>
