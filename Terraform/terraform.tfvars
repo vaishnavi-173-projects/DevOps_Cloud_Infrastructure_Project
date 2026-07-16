@@ -1,0 +1,8 @@
+resource_group_name = "rg-student-result-notifier"
+location            = "East US"
+vnet_name           = "vnet-srn"
+subnet_name         = "subnet-srn"
+acr_name            = "acrstudentresultnotifier"
+vm_name             = "vm-srn-app"
+vm_size             = "Standard_B2s"
+admin_username      = "azureadmin"
