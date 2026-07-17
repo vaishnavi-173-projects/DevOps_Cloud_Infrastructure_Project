@@ -7,8 +7,8 @@ pool:
   vmImage: 'ubuntu-latest'
 
 variables:
-  azureServiceConnection: 'My_Service_Connection'
-  acrName: 'acrstudentresultnotifier'
+  azureServiceConnection: 'My_Service'
+  acrName: 'acrstudentresultnotifier2026'
   resourceGroup: 'rg-student-result-notifier'
   vmName: 'vm-srn-app'
   imageName: 'student-result-notifier'
