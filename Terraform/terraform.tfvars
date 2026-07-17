@@ -1,5 +1,5 @@
 resource_group_name = "rg-student-result-notifier"
-location            = "East US"
+location            = "East asia"
 vnet_name           = "vnet-srn"
 subnet_name         = "subnet-srn"
 acr_name            = "acrsrnterraform26"
