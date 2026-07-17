@@ -8,7 +8,7 @@ pool:
 
 variables:
   azureServiceConnection: 'My_Service'
-  acrName: 'acrstudentresultnotifier2026'
+  acrName: 'aacrsrnterraform26'
   resourceGroup: 'Student-Result-Notifier'
   vmName: 'vm-srn-app'
   imageName: 'student-result-notifier'
