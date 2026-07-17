@@ -7,7 +7,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 variables:
-  azureServiceConnection: 'My_Service'
+  azureServiceConnection: 'my-new-connection'
   acrName: 'aacrsrnterraform26'
   resourceGroup: 'Student-Result-Notifier'
   vmName: 'vm-srn-app'
