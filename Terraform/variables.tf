@@ -1,13 +1,13 @@
 variable "resource_group_name" {
   description = "Name of the Azure Resource Group"
   type        = string
-  default     = "rg-student-result-notifier"
+  default     = "Student-Result-Notifier"
 }
 
 variable "location" {
   description = "Azure region"
   type        = string
-  default     = "East asia"
+  default     = "Southeast Asia"
 }
 
 variable "vnet_name" {
