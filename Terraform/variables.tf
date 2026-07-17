@@ -25,7 +25,7 @@ variable "subnet_name" {
 variable "acr_name" {
   description = "Azure Container Registry name (must be globally unique, alphanumeric only)"
   type        = string
-  default     = "acrstudentresultnotifier"
+  default     = "acrsrnterraform26"
 }
 
 variable "vm_name" {
@@ -50,4 +50,9 @@ variable "admin_password" {
   description = "Admin password for the VM"
   type        = string
   sensitive   = true
+}
+
+variable "subscription_id" {
+  description = "Azure Subscription ID"
+  type        = string
 }
