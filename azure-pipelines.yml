@@ -9,7 +9,7 @@ pool:
 variables:
   azureServiceConnection: 'My_Service'
   acrName: 'acrstudentresultnotifier2026'
-  resourceGroup: 'rg-student-result-notifier'
+  resourceGroup: 'Student-Result-Notifier'
   vmName: 'vm-srn-app'
   imageName: 'student-result-notifier'
   imageTag: '$(Build.BuildId)'
